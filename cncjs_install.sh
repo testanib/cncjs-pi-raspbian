@@ -1611,7 +1611,7 @@ if [[ ${main_list_entry_selected[*]} =~ 'A09' ]]; then
 		msg % "Cloning GIT Repository: cncjs/cncjs-pi-raspbian" \
 			"git clone https://github.com/cncjs/cncjs-pi-raspbian.git /tmp/cncjs-pi-raspbian"
 	else
-		msg i "Cloned GIT Repository: cncjs/cncjs-pi-raspbian"
+		msg i "Cloned GIT Repository: cncjs/cncjs-pi-raspbian to /tmp/cncjs-pi-raspbian"
 	fi
 
 	# Create Videos Direcory
@@ -1624,7 +1624,7 @@ if [[ ${main_list_entry_selected[*]} =~ 'A09' ]]; then
 
 	# Copy Video Files from Repository
 	msg % "Copy Video Scripts from Repository" \
-		"cp "/tmp/cncjs-pi-raspbian/Videos/"* "${HOME}/Videos/"; \
+		"cp "/tmp/cncjs-pi-raspbian/accessories/video/"* "${HOME}/Videos/"; \
 		chmod +x "${HOME}/Videos/"*.sh"
 fi
 
