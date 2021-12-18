@@ -522,8 +522,8 @@ if [[ ${main_list_entry_selected[*]} =~ 'A12' ]] || [[ ${main_list_entry_selecte
 			'sudo apt-get install -qq -y nodejs'
 		msg % "Installing Build Essential" \
 			'sudo apt-get install -qq -y -f build-essential gcc g++ make'
-		# msg % "Installing Latest Node Package Manager (NPM)" \
-		# 	'sudo npm install -g npm@latest'
+		msg % "Installing Latest Node Package Manager (NPM)" \
+		 	'sudo npm install -g npm@latest'
 	fi
 else
 	msg h "Node.js & NPM Information"
